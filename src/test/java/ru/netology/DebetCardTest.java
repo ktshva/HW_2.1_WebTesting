@@ -38,7 +38,7 @@ class DebetCardTest {
     @Test
     void shouldSuccessSent() {
 
-        driver.get("http://127.0.0.1:9999");
+        driver.get("http://localhost:9999");
 
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Райан Гослинг");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79203520234");
