@@ -31,7 +31,6 @@ class DebetCardTest {
     @AfterEach
     void afterEach() {
         driver.quit();
-        driver = null;
     }
 
     @Test
