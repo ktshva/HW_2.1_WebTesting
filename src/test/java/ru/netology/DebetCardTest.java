@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class AppOrderPositiveTest {
+class DebetCardTest {
     WebDriver driver;
 
     @BeforeAll
