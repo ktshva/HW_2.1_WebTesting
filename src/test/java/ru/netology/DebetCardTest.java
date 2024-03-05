@@ -125,13 +125,13 @@ class DebetCardTest {
     }
 
     @Test
-    void shouldCheckboxChecked() {
+    void shouldEmptyCheckbox() {
 
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Райян Гослинг");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79203520234");
         driver.findElement(By.className("button")).click();
-        WebElement checkbox = driver.findElement(By.cssSelector("[data-test-id=agreement]"));
-        boolean checked = checkbox.getAttribute("class").contains("checkbox_checked");
-        assertTrue(checked);
+        Boolean actual = driver.findElement(By.cssSelector("[data-test-id='agreement'].input_invalid")).isEnabled();
+        Boolean expected = true;
+        assertEquals(expected, actual);
     }
 }
