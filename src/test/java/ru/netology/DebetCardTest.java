@@ -130,7 +130,7 @@ class DebetCardTest {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Райян Гослинг");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79203520234");
         driver.findElement(By.className("button")).click();
-        Boolean actual = driver.findElement(By.cssSelector("[data-test-id='agreement'].input_invalid")).isEnabled();
+        Boolean actual = driver.findElement(By.cssSelector("[data-test-id='agreement'].input_invalid")).isDisplayed();
         Boolean expected = true;
         assertEquals(expected, actual);
     }
